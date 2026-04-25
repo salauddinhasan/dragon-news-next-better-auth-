@@ -26,7 +26,7 @@ const BreakingNews = () => {
         Latest
       </button>
 
-      <Marquee pauseOnHover={true} speed={50}>
+      <Marquee pauseOnHover={true} speed={100}>
         {news.map((n) => (
           <div key={n.id} className="flex items-center">
             <p className="mr-10 font-medium text-gray-800">{n.title}</p>
