@@ -1,9 +1,9 @@
- 
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <div>
-      <h2>hello dev</h2>
-    </div>
-  );
-}
+ const default_category_id = '01'
+
+const Home =  async () => {
+   redirect(`/category/${default_category_id}`);
+};
+
+export default Home;
